@@ -6,36 +6,74 @@
     <title>Order</title>
     <style>
         input {
-            width: 300px
+            width: 300px;
+        }
+        
+        img {
+            width: 100px;
+        }
+        
+        figure {
+            display: inline-block;
         }
     </style>
 </head>
 
 
 <body>
-    <fieldset>
-        <legend>My information</legend>
-        <select name="myfood" id="">
-            <option value="pizza">Mr</option>
-            <option value="hotdog">Mrs</option>
-            <option value="burger">Miss</option>
-        </select>
-        <br>
-        <label for="">Name </label>
-        <input type="text" name="Name" placeholder="Please Enter Your Full Name">
-        <br>
-        <label for="">Email </label>
-        <input type="text" name="Name" placeholder="Please Enter Your Email">
-        <br>
-        <label for="">Phone </label>
-        <input type="text" name="Name" placeholder="Please Enter Your Phone Number">
-        <br>
-        <label for="">City: </label>
-        <select name="myfood" id="">
-            <option value="pizza">London</option>
-            <option value="hotdog">Toronto</option>
-            <option value="burger">Vancouver/option>
-    </fieldset>
+    <form action="">
+        <fieldset>
+            <legend>My information</legend>
+            <select name="Title" id="">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+            </select>
+            <br>
+            <label for="">Name </label>
+            <input type="text" name="Name" placeholder="Please Enter Your Full Name">
+            <br>
+            <label for="">Email </label>
+            <input type="text" name="Name" placeholder="Please Enter Your Email">
+            <br>
+            <label for="">Phone </label>
+            <input type="text" name="Name" placeholder="Please Enter Your Phone Number">
+            <br>
+            <label for="city">City: </label>
+            <select name="city" id="city">
+                <option value="London">London</option>
+                <option value="Toronto">Toronto</option>
+                <option value="Vancouver">Vancouver</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Order Information</legend>
+            <figure>
+                <img src="img/338_Bill_Eichenlaub.jpg" alt="">
+
+                <figcaption>
+                    <input type="checkbox">
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/img/new-york-cheesecake-25-600.jpg" alt="">
+                <figcaption>
+                    <input type="checkbox">
+                </figcaption>
+            </figure>
+
+
+            <br>
+            <label for="people">People(1-4)</label>
+            <br>
+            <label for="payment">Payment</label>
+            <input type="radio" value="payment">
+
+        </fieldset>
+
+
+    </form>
 
 </body>
 
