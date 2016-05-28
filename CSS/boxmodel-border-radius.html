@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Boxmodel Border Radius</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        #outter {
+            width: 200px;
+            height: 200px;
+            border: solid gold 18px;
+            border-top-left-radius: 50px;
+            border-radius: 50px 0 0 6em/3em;
+        }
+        
+        #inner {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            border: solid 18px;
+            position: absolute;
+            left: 8px;top: 8px
+        }
+        #inner1 {width: 11.5em;
+            height:6em;
+            border-radius: 6em/3em;
+            border: solid 18px;
+            position: absolute;
+            left: 8px;top: 112px}
+    </style>
+</head>
+
+<body>
+    <div id="outter">
+        <div id="inner"></div>
+        <div id="inner1"></div>
+    </div>
+</body>
+
+</html>
