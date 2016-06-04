@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Background Position</title>
+    <style>
+        #containercontainer{
+            width: 600px;
+            height: 400px;
+            border: solid tomato;
+            margin-bottom: 2000px;
+            overflow: auto;
+            
+        }
+        #container {
+            width: 600px;
+            height: 800px;
+            border: solid 10px;
+            background-image: url(/img/338_Bill_Eichenlaub.jpg);
+            background-size: 300px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-attachment: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="containercontainer"></div>
+    </div>
+    <p>Contain remains the original scale; Cover fills up the border, not maintaining the scale of the original picture.</p>
+</body>
+
+</html>

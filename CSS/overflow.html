@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+    <style>
+        #container {
+            width: 500px;
+            height:150px;
+            background-color: tomato;
+            overflow:scroll;
+        }
+        ::-webkit-scrollbar{
+            -webkit-appearance:none
+        }
+        ::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background-color: orange
+        }
+        img{width: 400px;}
+    </style>
+
+</head>
+<body>
+    <div id="container"><img src="/img/burger.jpg" alt="">></div>
+</body>
+
+</html>
