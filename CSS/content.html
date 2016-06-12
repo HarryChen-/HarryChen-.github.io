@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content</title>
+    <style>
+        #container{
+            height: 300px;
+            background-color: aquamarine
+        }
+        #item{
+            height:100%;
+            width:50%;
+            background-color: rebeccapurple;
+            display: inline-block
+        }
+        #container:before{
+            content:'Before items';
+            display: inline-block;
+            width: 150px;
+            height: 200px;
+            background-color: lightcoral;
+            vertical-align: top
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="item"></div>
+    </div>
+</body>
+</html>
