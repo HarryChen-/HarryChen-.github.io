@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    #container {
+        width: 600px;
+        height: 400px;
+        background-color: rebeccapurple;
+        display: flex;
+/*        flex-direction: row;*/
+/*        flex-wrap: wrap;*/
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+/*        align-content: flex-start;*/
+    }
+    #container div {
+        background-color: aquamarine;
+        height: 50px;
+        border: solid 1px;
+        font-size: 45px;
+        flex-basis: 100%;
+    }
+    #container #one {
+        flex-grow: 1;
+        flex-basis: auto;
+        order: 3;
+        height: 40px;
+        align-self: flex-end;
+    }
+    #container #two {
+/*        flex-grow: 2;*/
+/*        flex-basis: auto;*/
+        flex: 2 2 auto
+        order: 2;
+        height: 60px;
+    }
+    #container #three {
+        flex-grow: 3;
+         flex-basis: auto;
+        order:1;
+        height: 80px;
+    }
+    #container #four {
+        flex-grow: 4;
+        flex-basis: auto;
+        order: 4;
+        height: 40px;
+    }
+    #container #five {
+        flex-grow: 5;
+        flex-basis: auto;
+        order: 5;
+        height: 60px;
+    }
+    #container #six {
+        flex-grow: 6;
+        flex-basis: auto;
+        order: 6;
+        height: 80px;
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+        <div id="six">6</div>
+    </div>
+</body>
+</html>

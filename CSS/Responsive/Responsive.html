@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive</title>
+    <style>
+        #one, #two {
+            height: 100px;
+        }
+        #one {
+            background-color:aquamarine;
+        }
+        #two {
+            background-color: tomato;
+        }
+        @media screen and (min-width: 401px) {
+            #one, #two {
+                display: inline-block;
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="one"></div><!--
+    --><div id="two"></div>
+</body>
+</html>
