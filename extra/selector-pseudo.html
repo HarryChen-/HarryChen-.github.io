@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector Pseudo</title>
+    <style>
+        *{
+            display: inline-block
+        }
+        li:first-child{
+            text-transform: uppercase;
+        }
+        li:nth-child(2){
+            border: double
+        }
+        ul:before{
+            content:'This is a List';
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            background-color: tan;
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+</body>
+</html>
