@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Example</title>
+    <style>
+        #container{
+            height: 435px;
+            width: 275px;
+            border: solid 10px;
+        }
+        header {
+            background-color: lightcyan;
+            height: 10%;
+        }
+        article{
+            background-color: lightcoral;
+            height: 50%;
+        }
+        nav{
+            background-color: lightblue;
+            height: 10%;
+        }
+        aside{
+            background-color:lightgoldenrodyellow;
+            height: 10%;
+        }
+        footer{
+            background-color: lightgreen;
+            height: 20%;
+        }
+        @media screen and (min-width: 600px){
+            #container{
+                width: 600px;
+                height: 400px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            header, footer{
+                flex-basis: 100%;
+                height: auto;
+            }
+            header{
+                order: 1;
+            }
+            article{
+                order: 2;
+            }
+            nav{
+                order: 3;
+            }
+            aside{
+                order: 4;
+            }
+            footer{
+                order: 5;
+            }
+            nav, article, aside{
+                flex-basis: auto;
+                flex-grow: 1;
+                height: auto;
+            }
+            nav, aside{
+                width: 50%
+            }
+            article{
+                width: 100%
+            }
+        }
+        @media screen and (min-width: 800px){
+            #container{
+                width: 850px;
+                height: 500px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            header, footer{
+                flex-basis: 100%;
+                height: auto;
+            }
+            header{
+                order: 1;
+            }
+            article{
+                order: 3;
+            }
+            nav{
+                order: 2;
+            }
+            aside{
+                order: 4;
+            }
+            footer{
+                order: 5;
+            }
+            nav, article, aside{
+                flex-basis: auto;
+                flex-grow: 1;
+                height: auto;
+            }
+            nav, aside{
+                width: 25%
+            }
+            article{
+                width: 50%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>header</header>
+    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus adipisci, repudiandae velit id laboriosam asperiores tempora sed soluta, tempore suscipit? Culpa atque nemo deleniti tempore dicta unde eius ad quidem?</article>
+    <nav>aside left</nav>
+    <aside>aside right</aside>
+    <footer>footer</footer> 
+    </div>
+</body>
+</html>
