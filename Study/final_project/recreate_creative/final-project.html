@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /*        header section*/
+        
+        header {
+            background-image: url(img/header.jpg);
+            color: white;
+            background-size: cover
+        }
+        
+        body {
+            font-family: sans-serif;
+        }
+        
+        #navbar {
+            position: relative;
+            border: solid grey 1px;
+        }
+        
+        #navbar ul {
+            list-style: none;
+            position: absolute;
+            right: 20px;
+            top: 0;
+        }
+        
+        #navbar ul li {
+            display: inline-block;
+            text-transform: uppercase;
+            padding-left: 10px;
+            font-size: 0.6em;
+        }
+        
+        #logo {
+            display: inline-block;
+            font-size: 0.7em;
+            margin-left: 2px;
+        }
+        
+        #banner {
+            padding: 80px;
+            text-align: center;
+        }
+        
+        #banner .title {
+            text-transform: uppercase;
+            font-size: 2em;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        
+        hr {
+            width: 40px;
+            margin: 15px auto;
+            border: solid white;
+        }
+        
+        .bghr {
+            width: 40px;
+            border: solid orangered;
+            margin: 15px auto;
+        }
+        
+        #banner .subtitle {
+            font-size: 0.7em;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .btn {
+            width: 90px;
+            font-size: 8px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 15px;
+            height: 23px;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+        
+        .bgbtn {
+            background-color: tomato;
+            color: white;
+        }
+        /*        intro section*/
+        
+        @media all and (min-width:679px) {
+            #banner {
+                padding: 150px;
+            }
+        }
+        
+        #intro {
+            background-color: orangered;
+            text-align: center;
+            color: white;
+            padding: 50px;
+            font-family: sans-serif
+        }
+        
+        #intro .title {
+            font-size: 1.2em;
+        }
+        
+        #intro .subtitle {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 0.7em;
+        }
+        
+        .service {
+            text-align: center;
+        }
+        
+        #download img {
+            width: 33.333333333333333333%;
+            float: left;
+        }
+        
+        #download_now {
+            background-color: black;
+            text-align: center;
+            padding: 30px;
+            clear: both;
+        }
+        
+        #download_now #section_title {
+            color: white;
+        }
+        
+        #section_name {
+            text-align: center;
+            padding-top: 25px;
+        }
+        
+        #text {
+            text-align: center;
+        }
+        
+        #email {
+            color: orange;
+            text-align: center;
+        }
+        .contact{
+            display: inline-block;
+        padding-left: 20%;
+        }
+        .phone{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="navbar">
+        <div id="logo">START BOOTSTRAP</div>
+        <ul>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+        <div id="banner">
+            <div class="title">
+                your favourite source of free bootstrap themes
+            </div>
+            <hr class="hr bghr">
+            <div class="subtitle">
+                Start Bootstrap can help you build better websites using the Bootstrap CSS frameworks! Just download your template and start going, no strings attached!
+            </div>
+            <button class="bgbtn btn">Find Out More</button>
+        </div>
+        </div>
+    </header>
+    <div id="intro">
+        <div class="title">
+            We've got what you need!
+        </div>
+        <hr class="hr">
+        <div class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas facere tempore ipsam ipsa suscipit, voluptatum, quibusdam, delectus itaque sequi hic commodi nihil unde ratione optio? Illum placeat, saepe quibusdam temporibus!
+        </div>
+        <button class="btn">get started</button>
+    </div>
+    <div class="service">
+        At Your Service
+    </div>
+    <hr class="hr">
+    <!--    <div>-->
+    <!--
+        <div id="script"><i class="fa fa-diamond" aria-hidden="true"><br>Sturdy Templates<br>Our Templates are updated regularly, so they are not outdated</i></div>
+        <div id="script"> <i class="fa fa-paper-plane" aria-hidden="true"><br></i></i>
+        </div>
+        <div id="script"><i class="fa fa-newspaper-o" aria-hidden="true"></i></div>
+        <div id="script"><i class="fa fa-heart" aria-hidden="true"></i>
+        </div>
+-->
+    <!--
+    </div>
+
+
+
+    <i class="fa fa-heart" aria-hidden="true"></i>
+-->
+    <div id="download">
+        <div id="pictures">
+            <img src="img/portfolio/1.jpg" alt="">
+
+            <img src="img/portfolio/2.jpg" alt="">
+
+            <img src="img/portfolio/3.jpg" alt="">
+
+            <img src="img/portfolio/4.jpg" alt="">
+
+            <img src="img/portfolio/5.jpg" alt="">
+
+            <img src="img/portfolio/6.jpg" alt="">
+
+        </div>
+        <div id="download_now">
+            <div id="section_title">
+                Free Download at Start Bootstrap!
+            </div>
+            <button class="btn">
+                Download Now!
+            </button>
+        </div>
+    </div>
+    </div>
+    <div id="contact">
+        <div id="section_name">
+            Let's Get in Touch!
+        </div>
+        <hr class="hr bghr">
+        <div id="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consectetur nostrum, facilis ut eius.
+        </div>
+        <div class="contact">
+            <i class="fa fa-phone" aria-hidden="true" style="font-size:2.5em; display:inline-block; text-align:center;"></i>
+        <div id="phone">123-456-789</div>
+        </div>
+        <div class="contact">
+          <i class="fa fa-envelope-o" aria-hidden="true" style="font-size: 2.5em; display: inline-block; text-align: center;"><br></i>
+        <div id="email">feedback@startbootstrap.com</div>  
+        </div>
+        
+
+    </div>
+</body>
+
+</html>

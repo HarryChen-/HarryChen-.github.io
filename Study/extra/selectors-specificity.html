@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Specificity</title>
+    <style>
+        #para.para1{
+            color: black !important;
+            text-transform: capitalize;
+            font-variant: small-caps
+        }
+        #para{
+            color: black
+        }
+        .para{
+            color: purple;
+        }
+        p{
+            font-size: 2em;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraph</p>
+    <p class="para">This is a paragraph (class is more specific than p-tag)</p>
+    <p id="para" class="para" style="color: green">This is a paragraph (id is more specific than class)(inline style has a even higher priority)</p>
+     <p id="para" class="para para1" style="color: green">This is a paragraph (!important has the highest priority)</p>
+</body>
+</html>
